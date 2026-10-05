@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,700;0,800;0,900;1,800&amp;display=swap">
-<style
+<style>
 html{scroll-behavior:smooth}body{margin:0;background:#ffffff}
 *:focus-visible{outline:3px solid #6366f1;outline-offset:3px}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}.btn,.card{transition:none}}
@@ -27,6 +27,31 @@ a{color:#171616}a:hover{color:#4f50d8}
 .outline{color:transparent;-webkit-text-stroke:2px #171616}
 .outline:hover{color:#171616}
 .role:hover .yr{color:#6366f1}
+
+@media (max-width: 768px){
+  header nav{padding:16px !important}
+  header nav > div{width:100%; justify-content:center; gap:14px !important}
+  header nav > div .navlink{font-size:14px !important}
+  header nav > div .btn{min-height:42px !important; padding:0 16px !important}
+  section > div,
+  section[style*="max-width: 1280px"]{padding-left:18px !important; padding-right:18px !important}
+  h1{font-size:clamp(52px,14vw,88px) !important}
+  h2{font-size:clamp(42px,12vw,70px) !important}
+  .card{padding:28px !important}
+  #contact > div{grid-template-columns:1fr !important; padding-top:80px !important; padding-bottom:80px !important}
+  #contact h2{font-size:clamp(64px,18vw,110px) !important}
+  #contact a.btn{width:100%; box-sizing:border-box; font-size:17px !important; min-height:58px !important; padding:0 18px !important}
+}
+
+@media (max-width:480px){
+  header nav > a:first-child span:last-child{font-size:16px !important}
+  header nav > div{gap:10px !important}
+  header nav > div .navlink{font-size:13px !important}
+  header nav > div .btn{font-size:14px !important; padding:0 12px !important}
+  #contact a.btn{font-size:16px !important; overflow-wrap:anywhere}
+  .card{padding:22px !important}
+}
+
 </style>
 </head>
 <body>
@@ -58,7 +83,7 @@ a{color:#171616}a:hover{color:#4f50d8}
         <p style="margin: 0; max-width: 580px; font-size: 22px; line-height: 1.4; font-weight: 500; color: #d4d4d8">I lead 24x7 DevOps support at 10Pearls. Your cloud stays monitored, your SLAs stay met, and incidents get closed fast.</p>
         <div style="display: flex; flex-wrap: wrap; gap: 16px; padding-top: 8px">
           <a class="btn" href="#experience" style="display: inline-flex; align-items: center; min-height: 56px; padding: 0 28px; background: #6366f1; color: #ffffff; font-weight: 800; font-size: 17px; text-decoration: none; border: 3px solid #ffffff; box-shadow: 6px 6px 0 #ffffff">See my experience →</a>
-          <a class="btn" href="Muhammad_Abdul_Moiz_CV%20-%20Updated.pdf" download="Muhammad_Abdul_Moiz_CV%20-%20Updated.pdf" style="display: inline-flex; align-items: center; min-height: 56px; padding: 0 28px; background: transparent; color: #ffffff; font-weight: 800; font-size: 17px; text-decoration: none; border: 3px solid #ffffff">Download CV ↗</a>
+          <a class="btn" href="#cv" style="display: inline-flex; align-items: center; min-height: 56px; padding: 0 28px; background: transparent; color: #ffffff; font-weight: 800; font-size: 17px; text-decoration: none; border: 3px solid #ffffff">Download CV ↗</a>
         </div>
       </div>
 
@@ -359,11 +384,10 @@ a{color:#171616}a:hover{color:#4f50d8}
         <p style="margin: 0; max-width: 520px; font-size: 21px; line-height: 1.4; font-weight: 500">Need 24x7 support that holds its SLAs? Send a line and let's set it up.</p>
       </div>
       <div style="display: flex; flex-direction: column; gap: 16px">
-        <a class="btn" href="mailto:muhammadamoiz@gmail.com" style="display: flex; align-items: center; justify-content: space-between; min-height: 64px; padding: 0 24px; background: #ffffff; color: #171616; border: 3px solid #171616; box-shadow: 6px 6px 0 #171616; text-decoration: none; font-size: 20px; font-weight: 800">muhammadamoiz@gmail.com<span>→</span></a>
-        <a class="btn" href="mailto:a-moiz@live.com" style="display: flex; align-items: center; justify-content: space-between; min-height: 64px; padding: 0 24px; background: transparent; color: #ffffff; border: 3px solid #ffffff; text-decoration: none; font-size: 20px; font-weight: 800">✉️&nbsp; a-moiz@live.com<span>→</span></a>
-        <a class="btn" href="tel:+923453031751" style="display: flex; align-items: center; justify-content: space-between; min-height: 64px; padding: 0 24px; background: transparent; color: #ffffff; border: 3px solid #ffffff; text-decoration: none; font-size: 20px; font-weight: 800">📞&nbsp; +923453031751<span>→</span></a>
-        <a class="btn" href="https://www.linkedin.com/in/mabdulmoiz0076/" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: space-between; min-height: 64px; padding: 0 24px; background: transparent; color: #ffffff; border: 3px solid #ffffff; text-decoration: none; font-size: 20px; font-weight: 800">LinkedIn<span>↗</span></a>
-        <a class="btn" href="Muhammad_Abdul_Moiz_CV%20-%20Updated.pdf" download="Muhammad_Abdul_Moiz_CV%20-%20Updated.pdf" style="display: flex; align-items: center; justify-content: space-between; min-height: 64px; padding: 0 24px; background: transparent; color: #ffffff; border: 3px solid #ffffff; text-decoration: none; font-size: 20px; font-weight: 800">Download CV<span>↓</span></a>
+        <a class="btn" href="mailto:muhammadamoiz@gmail.com" style="display: flex; align-items: center; justify-content: space-between; min-height: 64px; padding: 0 24px; background: #ffffff; color: #171616; border: 3px solid #171616; box-shadow: 6px 6px 0 #171616; text-decoration: none; font-size: 20px; font-weight: 800"><span>✉️&nbsp; muhammadamoiz@gmail.com</span><span>→</span></a>
+        <a class="btn" href="tel:+923453031751" style="display: flex; align-items: center; justify-content: space-between; min-height: 64px; padding: 0 24px; background: transparent; color: #ffffff; border: 3px solid #ffffff; text-decoration: none; font-size: 20px; font-weight: 800"><span>📞&nbsp; +923453031751</span><span>→</span></a>
+        <a class="btn" href="#linkedin" style="display: flex; align-items: center; justify-content: space-between; min-height: 64px; padding: 0 24px; background: transparent; color: #ffffff; border: 3px solid #ffffff; text-decoration: none; font-size: 20px; font-weight: 800">LinkedIn<span>↗</span></a>
+        <a class="btn" href="#cv" style="display: flex; align-items: center; justify-content: space-between; min-height: 64px; padding: 0 24px; background: transparent; color: #ffffff; border: 3px solid #ffffff; text-decoration: none; font-size: 20px; font-weight: 800">Download CV<span>↓</span></a>
       </div>
     </div>
   </section>
